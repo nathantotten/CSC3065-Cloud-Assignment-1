@@ -1,4 +1,6 @@
 import argparse
+from timeit import default_timer as timer
+import cProfile
 
 def fibonacci(n):
     if n <= 0:
@@ -25,8 +27,17 @@ args = parser.parse_args()
 # Get the limit from the command-line arguments
 limit = args.limit
 
+#Start execution timer
+start = timer()
+
 # Calculate the Fibonacci sequence
-result = fibonacci(limit)
+with cProfile.Profile() as Profile:
+    result = fibonacci(limit)
+
+#End execution timer
+end = timer()
 
 print(f"Computed Fibonacci sequence of length {len(result)}: {result}")
+print(end - start)
+Profile.print_stats()
 
