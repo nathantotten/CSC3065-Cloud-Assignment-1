@@ -17,7 +17,7 @@ def fibonacci(n):
 
 # Create a command-line argument parser
 parser = argparse.ArgumentParser(description='Compute Fibonacci sequence of a specified length.')
-parser.add_argument('--limit', type=int, default=10000, help='Length of the Fibonacci sequence')
+parser.add_argument('--limit', type=int, default=100, help='Length of the Fibonacci sequence')
 
 # Parse the command-line arguments
 args = parser.parse_args()
@@ -29,3 +29,4 @@ limit = args.limit
 result = fibonacci(limit)
 
 print(f"Computed Fibonacci sequence of length {len(result)}: {result}")
+
