@@ -1,4 +1,5 @@
 import argparse
+from resource import *
 from timeit import default_timer as timer
 import cProfile
 
@@ -39,5 +40,8 @@ end = timer()
 
 print(f"Computed Fibonacci sequence of length {len(result)}: {result}")
 print(end - start)
-Profile.print_stats()
+#Profile.print_stats()
+print(getrusage(RUSAGE_SELF))
 
+# This is helpful https://www.geeksforgeeks.org/how-to-get-current-cpu-and-ram-usage-in-python/
+# And this! https://www-h.eng.cam.ac.uk/help/languages/python/pythonmemory.html
