@@ -1,4 +1,4 @@
-# CSC3065-Cloud-Assignment-1
+# php_prime_number_application
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.eeecs.qub.ac.uk/40290303/csc3065-cloud-assignment-1.git
+git remote add origin https://repository.hal.davecutting.uk/root/php_prime_number_application.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.eeecs.qub.ac.uk/40290303/csc3065-cloud-assignment-1/-/settings/integrations)
+- [ ] [Set up project integrations](https://repository.hal.davecutting.uk/root/php_prime_number_application/-/settings/integrations)
 
 ## Collaborate with your team
 
