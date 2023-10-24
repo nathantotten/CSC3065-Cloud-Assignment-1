@@ -31,4 +31,10 @@ echo json_encode([
     'prime_numbers' => $primeNumbers,
     'count' => count($primeNumbers),
 ]);
+
+
+// https://www.php.net/manual/en/function.memory-get-usage.php
+// https://www.weanswer.xyz/monitor-php-cpu-memory-usage
 ?>
+
+
