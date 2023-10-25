@@ -41,8 +41,6 @@ result = fibonacci(limit)
 #End execution timer
 #end = timer()
 
-sleep(15)
-
 print(f"Computed Fibonacci sequence of length {len(result)}: {result}")
 #print(end - start)
 #Profile.print_stats()
