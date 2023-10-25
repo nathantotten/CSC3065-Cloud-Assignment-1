@@ -1,5 +1,6 @@
 import argparse
 from resource import *
+from time import sleep
 from timeit import default_timer as timer
 import cProfile
 
@@ -29,19 +30,21 @@ args = parser.parse_args()
 limit = args.limit
 
 #Start execution timer
-start = timer()
+#start = timer()
 
 # Calculate the Fibonacci sequence
 with cProfile.Profile() as Profile:
     result = fibonacci(limit)
 
 #End execution timer
-end = timer()
+#end = timer()
+
+sleep(15)
 
 print(f"Computed Fibonacci sequence of length {len(result)}: {result}")
-print(end - start)
+#print(end - start)
 #Profile.print_stats()
-print(getrusage(RUSAGE_SELF))
+#print(getrusage(RUSAGE_SELF))
 
 # This is helpful https://www.geeksforgeeks.org/how-to-get-current-cpu-and-ram-usage-in-python/
 # And this! https://www-h.eng.cam.ac.uk/help/languages/python/pythonmemory.html
